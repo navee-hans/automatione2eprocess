@@ -3,7 +3,7 @@ pipeline {
 
     environment {
          MAVEN_HOME = 'C:/apache-maven-3.8.6-bin/apache-maven-3.8.6'
-            JAVA_HOME = 'C:/Program Files/Java/jdk-17/bin'
+            JAVA_HOME = 'C:/Program Files/Java/jdk-17'
     }
 
     stages {
