@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-08T20:12:50 IST" name="Practice Suite" finished-at="2025-01-08T20:13:01 IST" duration-ms="11837">
+    <groups>
+    </groups>
+    <test started-at="2025-01-08T20:12:50 IST" name="Test Basics 1" finished-at="2025-01-08T20:13:01 IST" duration-ms="11837">
+      <class name="AutomationSetup">
+        <test-method is-config="true" signature="setup()[pri:0, instance:AutomationSetup@c33b74f]" started-at="2025-01-08T20:12:50 IST" name="setup" finished-at="2025-01-08T20:12:57 IST" duration-ms="6814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test1()[pri:0, instance:AutomationSetup@c33b74f]" started-at="2025-01-08T20:12:57 IST" name="test1" finished-at="2025-01-08T20:12:57 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="killdriver()[pri:0, instance:AutomationSetup@c33b74f]" started-at="2025-01-08T20:12:57 IST" name="killdriver" finished-at="2025-01-08T20:12:57 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killdriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:AutomationSetup@c33b74f]" started-at="2025-01-08T20:12:57 IST" name="setup" finished-at="2025-01-08T20:13:01 IST" duration-ms="4507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test2()[pri:0, instance:AutomationSetup@c33b74f]" started-at="2025-01-08T20:13:01 IST" name="test2" finished-at="2025-01-08T20:13:01 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="killdriver()[pri:0, instance:AutomationSetup@c33b74f]" started-at="2025-01-08T20:13:01 IST" name="killdriver" finished-at="2025-01-08T20:13:01 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killdriver -->
+      </class> <!-- AutomationSetup -->
+    </test> <!-- Test Basics 1 -->
+  </suite> <!-- Practice Suite -->
+</testng-results>

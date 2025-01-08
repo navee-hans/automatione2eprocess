@@ -1,14 +1,13 @@
-import org.checkerframework.checker.units.qual.A;
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class AutomationSetup {
+
     private static AutomationSetup instance;
     private static ThreadLocal<WebDriver> driverManager = new ThreadLocal<>();
     private static WebDriver driver;
@@ -18,7 +17,12 @@ public class AutomationSetup {
     private void initBrowser(String browser) {
         switch (browser) {
             case "chrome":
-                driverManager.set(new ChromeDriver());
+                ChromeOptions options = new ChromeOptions();
+                String headless = System.getProperty("headless", "false");
+                if (headless.equalsIgnoreCase("true")) {
+                    options.addArguments("--headless");
+                }
+                driverManager.set(new ChromeDriver(options));
                 break;
 
             default:
@@ -70,6 +74,5 @@ public class AutomationSetup {
             driverManager.get().quit();
             driverManager.remove();
         }
-
-            }
+    }
 }
